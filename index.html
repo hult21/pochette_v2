@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CUSTOM STYLES -->
+    <link rel="stylesheet" href="app.css" />
+
+    <!-- GOOGLE FONTS  -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ICONS -->
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <title>Pochette | Pocket-sized Diaries</title>
+  </head>
+  <body>
+    <div class="wrapper">
+        <div id="hero_container" class="main">
+
+
+            <div id="navbar">
+                <div class="app_logo">
+                    <img
+                    src="/Assets/LOGO_Pochette.svg"
+                    class="logo_icon"
+                    style="width: 40px"
+                    />
+                    <img
+                    src="/Assets/pochette_textLOGO.svg"
+                    class="logo_text"
+                    style="width: 110px"
+                    />
+                </div>
+
+                <ul class="nav_links">
+                    <li class="nav_item">
+                        <span class="material-symbols-outlined"> home </span> 
+                        <a href="#home_page">Home</a>
+                    </li>
+
+                    <li class="nav_item">
+                        <span class="material-symbols-outlined"> import_contacts </span> 
+                        <a href="#mypochettes_page">My Pochettes</a>
+                    </li>
+
+                    <li class="nav_item">
+                        <span class="material-symbols-outlined"> person </span> 
+                        <a href="#profile_page">Profile</a>
+                    </li>
+
+                    <li class="nav_item logout_btn">
+                        <span class="material-symbols-outlined"> logout </span> 
+                        <a href="#">Log Out</a>
+                    </li>
+                </ul>
+
+            
+            </div>
+
+            <section id="home_page" class="tab-content" style="display: none">
+
+            <div class="full_flex_wrapper">
+
+                <div class="left_grid">
+
+                <header>
+
+                    <div class="page-name">
+                    <span class="material-symbols-outlined"> home </span>
+                    <h1>Home</h1>
+                    </div>
+
+                    
+                        <button class="create_new_pochette">
+                            Create
+                        </button>
+                        
+                    <div class="new_pochette" style="display: none;">New Pochette</div>
+
+                </header>
+
+                <div class="journal_recent_entries">
+                    <div class="head_bar">
+                    <h3>Recent Entries</h3>
+
+                        <div class="search_in_entries">
+                            <span class="material-symbols-outlined"> search </span>
+                            <input type="search" placeholder="Search in Entries..." id="search_in_entries">     
+                        </div>
+
+                    </div>
+
+                    <div class="scroll_wrapper">
+                    <div class="entries_container">
+
+                        <div class="journal_thumbnail_data">
+
+                        <div class="journal_thumbnail">
+                            <img
+                            src="/Assets/22 2.png"
+                            alt=""
+                            />
+                        </div>
+
+                        <div class="journal_data">
+                            <div class="journal_title">
+                            <h5>Cindrella</h5>
+                            </div>
+
+                            <div class="journal_date">
+                            <p>Created 20 weeks ago</p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="entry_content">
+                        <div class="entry_date">
+                            <h5>24th January, 2024</h5>
+                        </div>
+
+                        <div class="entry_text">
+                            <p>
+                            Woke up feeling rejuvenated. Coffee aroma filled the
+                            air. Spent the morning reading a fascinating book. The
+                            rain outside added a peaceful rhythm to my thoughts. A
+                            day of simple joys.Woke up feeling rejuvenated. Coffee
+                            aroma filled the air. Spent the morning reading a
+                            fascinating book. The rain outside added a peaceful
+                            rhythm to my thoughts. A day of simple joys.
+                            </p>
+                        </div>
+
+                        
+                        </div>
+
+                        <button class="expand_entries_btn">
+                            <span class="material-symbols-outlined">
+                                more_vert
+                            </span>
+                            Show All
+                        </button>
+
+                    </div>
+
+                    <div class="entries_container">
+
+                        <div class="journal_thumbnail_data">
+
+                        <div class="journal_thumbnail">
+                            <img
+                            src="/Assets/23.png"
+                            alt=""
+                            />
+                        </div>
+
+                        <div class="journal_data">
+                            <div class="journal_title">
+                            <h5>The Diaries of Salma</h5>
+                            </div>
+
+                            <div class="journal_date">
+                            <p>Created 20 weeks ago</p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="entry_content">
+                        <div class="entry_date">
+                            <h5>24th January, 2024</h5>
+                        </div>
+
+                        <div class="entry_text">
+                            <p>
+                            Woke up feeling rejuvenated. Coffee aroma filled the
+                            air. Spent the morning reading a fascinating book. The
+                            rain outside added a peaceful rhythm to my thoughts. A
+                            day of simple joys.Woke up feeling rejuvenated. Coffee
+                            aroma filled the air. Spent the morning reading a
+                            fascinating book. The rain outside added a peaceful
+                            rhythm to my thoughts. A day of simple joys.
+                            </p>
+                        </div>
+                        </div>
+
+                        <button class="expand_entries_btn">
+                            <span class="material-symbols-outlined">
+                                more_vert
+                            </span>
+                            Show All
+                        </button>
+
+                    </div>
+                    </div>
+
+                
+                </div>
+                </div>
+
+                <div class="right-grid">
+                <div class="head_line">
+                    <h3>Entry</h3>
+
+                    <button class="save_entry" disabled>Save to
+                        <span class="material-symbols-outlined">
+                            keyboard_arrow_down
+                        </span>
+                    </button>
+
+                    <div class="dropdown_menu">
+                        <a href="">Cindrella
+                            <p class="entry_count">12/20 Entries</p>
+                        </a>
+                        <a href="">The Diaries
+                            <p class="entry_count">12/20 Entries</p>
+                        </a>
+                        <a href="">Dog Days
+                            <p class="entry_count">12/20 Entries</p>
+                        </a>
+                        <a href="">Another Story
+                            <p class="entry_count">12/20 Entries</p>
+                        </a>
+                        <a href="">Look
+                            <p class="entry_count">12/20 Entries</p>
+                        </a>
+                        <a href="">2024
+                            <p class="entry_count">12/20 Entries</p>
+                        </a>
+                    </div>
+                </div>
+
+                <textarea name="" placeholder="Type Your Entry Here..." id="textarea" maxlength="1000"></textarea>
+
+
+                <div class="date-charCount-container">
+
+                    <button class="date-input">
+                        <span class="material-symbols-outlined"> add </span>
+                        Add Date
+                    </button>
+
+                    <div class="charCount">
+                    <p>0 <span>/1000</span></p>
+                    </div>
+                </div>
+
+                
+                </div>
+            </div>
+            </section>
+
+            <section id="workspace_page" class="tab-content" style="display: none">
+
+
+            <header>
+                <div class="page-name">
+                    <span class="material-symbols-outlined"> box_edit </span>
+                    <h1>Create</h1>
+                </div>
+
+                <input
+                id="pochette_title"
+                type="text"
+                placeholder="Untitled"
+                required
+                />
+
+                <button class="save_custom_pochette">
+                    Save
+                </button>
+                
+            </header>
+
+            <div class="custom_workspace">
+                <div class="color-palette">
+                <h6>Pick your cover colour</h6>
+
+                <div class="color-options">
+                    <img
+                    src="/Assets/bluepoche_LITTLEshadow 1.svg"
+                    class="rabat"
+                    alt=""
+                    style="width: 70px"
+                    />
+                    <img
+                    src="/Assets/beigepoche_LITTLEshadow.svg"
+                    class="casablanca"
+                    alt=""
+                    style="width: 70px"
+                    />
+                    <img
+                    src="/Assets/brownpoche_LITTLEshadow.svg"
+                    class="dakhla"
+                    alt=""
+                    style="width: 70px"
+                    />
+                </div>
+                </div>
+
+                <div id="canva" class="book_custom_view">
+                <img src="/Assets/bluepoche_WITHshadow 1.svg" alt="" />
+                </div>
+
+                <div class="stickers_full_menu">
+                <div class="slide-menu">
+                    <button class="bookmark-stk active">
+                    <span class="material-symbols-outlined"> bookmark </span>
+                    </button>
+
+                    <button class="flower-stk">
+                    <span class="material-symbols-outlined">
+                        filter_vintage
+                    </span>
+                    </button>
+
+                    <button class="photo-stk">
+                    <span class="material-symbols-outlined"> panorama </span>
+                    </button>
+
+                    <button class="ribbon-stk">
+                    <span class="material-symbols-outlined"> redeem </span>
+                    </button>
+                </div>
+
+                <div class="sticker-tray">
+                    <h6>Stickers</h6>
+
+                    <div class="sticker-elements">
+                    <div class="bookmark-stk" style="display: block">
+                        <img
+                        src="/Assets/31 2.png"
+                        class="bottom-right"
+                        alt=""
+                        style="width: 70px"
+                        />
+                        <img
+                        src="/Assets/34 4.png"
+                        class="bottom-right"
+                        alt=""
+                        style="width: 70px"
+                        />
+                        <img
+                        src="/Assets/33 4.png"
+                        class="left-top straight"
+                        alt=""
+                        style="width: 70px"
+                        />
+                        <img
+                        src="/Assets/42.png"
+                        class="layered-right"
+                        alt=""
+                        style="width: 70px"
+                        />
+                        <img
+                        src="/Assets/20.png"
+                        class="layered-top"
+                        alt=""
+                        style="width: 70px"
+                        />
+                        <img
+                        src="/Assets/41.png"
+                        class="bottom-right"
+                        alt=""
+                        style="width: 70px"
+                        />
+                        <img
+                        src="/Assets/31 4.png"
+                        class="layered-right"
+                        alt=""
+                        style="width: 70px"
+                        />
+                        <img
+                        src="/Assets/32.png"
+                        class="layered-right rotate"
+                        alt=""
+                        style="width: 70px"
+                        />
+                        <img
+                        src="/Assets/47.png"
+                        class="left-top straight"
+                        alt=""
+                        style="width: 70px"
+                        />
+                        <img
+                        src="/Assets/21.png"
+                        class="layered-right"
+                        alt=""
+                        style="width: 70px"
+                        />
+                        <img
+                        src="/Assets/49.png"
+                        class="left-top straight"
+                        alt=""
+                        style="width: 70px"
+                        />
+                        <img
+                        src="/Assets/50.png"
+                        class="left-over"
+                        alt=""
+                        style="width: 70px"
+                        />
+                    </div>
+
+                    <div class="flower-stk" style="display: none">
+                        <img
+                        src="/Assets/4.png"
+                        alt="white-flower"
+                        class="center-left resize"
+                        style="width: 70px"
+                        />
+                        <img
+                        src="/Assets/7.png"
+                        alt="bouquet"
+                        class="bottom-left"
+                        style="width: 70px"
+                        />
+                        <img
+                        src="/Assets/8.png"
+                        alt="bouquet"
+                        class="bottom-left"
+                        style="width: 70px"
+                        />
+                        <img
+                        src="/Assets/5.png"
+                        alt="yellow-flower"
+                        class="center-left resize"
+                        style="width: 70px"
+                        />
+                        <img
+                        src="/Assets/30 4.png"
+                        alt="daisy"
+                        class="center-left resize"
+                        style="width: 70px"
+                        />
+                        <img
+                        src="/Assets/43.png"
+                        alt="sunflower"
+                        class="center-left resize"
+                        style="width: 70px"
+                        />
+                        <img
+                        src="/Assets/33.png"
+                        alt="bouquet"
+                        class="bottom-left"
+                        style="width: 70px"
+                        />
+                        <img
+                        src="/Assets/6.png"
+                        alt="red-flower"
+                        class="center-left resize"
+                        style="width: 70px"
+                        />
+                    </div>
+
+                    <div class="photo-stk" style="display: none">
+                        <img
+                        src="/Assets/30 2.png"
+                        alt=""
+                        class="middle-top"
+                        style="width: 70px"
+                        />
+                        <img
+                        src="/Assets/19.png"
+                        alt=""
+                        class="middle-top"
+                        style="width: 70px"
+                        />
+                        <img
+                        src="/Assets/29.png"
+                        alt=""
+                        class="middle-top"
+                        style="width: 70px"
+                        />
+                        <img
+                        src="/Assets/14.png"
+                        alt=""
+                        class="middle-top"
+                        style="width: 70px"
+                        />
+                        <img
+                        src="/Assets/13.png"
+                        alt=""
+                        class="middle-top"
+                        style="width: 70px"
+                        />
+                        <img
+                        src="/Assets/48.png"
+                        alt=""
+                        class="middle-top"
+                        style="width: 70px"
+                        />
+                    </div>
+
+                    <div class="ribbon-stk" style="display: none">
+                        <img
+                        src="/Assets/34.png"
+                        alt=""
+                        class="center-left"
+                        style="width: 70px"
+                        />
+                        <img
+                        src="/Assets/10.png"
+                        alt=""
+                        class="center-left"
+                        style="width: 70px"
+                        />
+                        <img
+                        src="/Assets/11.png"
+                        alt=""
+                        class="center-left"
+                        style="width: 70px"
+                        />
+                        <img
+                        src="/Assets/12.png"
+                        alt=""
+                        class="center-left"
+                        style="width: 70px"
+                        />
+                        <img
+                        src="/Assets/51.png"
+                        alt=""
+                        class="center-left"
+                        style="width: 70px"
+                        />
+                        <img
+                        src="/Assets/16.png"
+                        alt=""
+                        class="straight-right"
+                        style="width: 70px"
+                        />
+                        <img
+                        src="/Assets/17.png"
+                        alt=""
+                        class="straight-right"
+                        style="width: 70px"
+                        />
+                        <img
+                        src="/Assets/18.png"
+                        alt=""
+                        class="straight-right"
+                        style="width: 70px"
+                        />
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <footer>
+                <h6 class="rabat active">Rabat</h6>
+                <h6 class="casablanca">Casablanca</h6>
+                <h6 class="dakhla">Dakhla</h6>
+            </footer>
+
+
+            </section>
+
+            <section id="mypochettes_page" class="tab-content" style="display: none">
+                <header>
+
+                <div class="page-name">
+                    <span class="material-symbols-outlined"> import_contacts </span>
+                <h1>My Pochettes</h1>
+                </div>
+
+                
+                    <button class="create_new_pochette">
+                        Create
+                    </button>
+                    
+                <div class="new_pochette" style="display: none;">New Pochette</div>
+
+                </header>
+
+            <div class="library_wrapper">
+
+                <div class="input_container">
+                    <span class="material-symbols-outlined"> search </span>
+                    <input type="search" placeholder="Search Pochette or Entry...">
+                </div>
+
+                <div class="journals_container">
+                    <div class="card">
+                        <img src="/Assets/22 2.png" alt="">
+
+                        <div class="journals_info">
+                            <div class="title_field">
+                                <h5>The Diaries of Salma Sage</h5>
+                            </div>
+
+                            <div class="update_field">
+                                <p>Last Update: 2m ago</p>
+                            </div>
+                        </div>
+
+                        <div class="card_buttons">
+                            <button class="edit_btn">Edit</button>
+                            <button class="delete_btn">Delete</button>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+
+
+
+
+            </div>
+
+            
+            </section>
+
+            <section id="profile_page" class="tab-content" style="display: block;">
+
+                    <header>
+
+                    <div class="page-name">
+                        <span class="material-symbols-outlined"> person </span>
+                    <h1>Profile</h1>
+                    </div>
+                    <button class="save_changes_btn">Save Changes</button>
+                    </header>
+
+                    <div class="profile_flex_wrapper">
+                        <div class="user_info">
+                            <div class="profile_picture_circle">
+                                <img src="" alt="">
+                                <button class="edit_profile_picture">     
+                                    <span class="material-symbols-outlined"> edit </span>
+                                </button>
+                            </div>
+
+                            <div class="user_name">
+                                <h3>Salma</h3>
+                                <p class="username_field">@username</p>
+                            </div>
+
+                        </div>
+
+                        <h4>Profile Settings</h4>
+
+                        <div class="change_username_field">
+                            <h5>Change Username</h5>
+                            <div class="username_input">
+                                <span class="material-symbols-outlined"> alternate_email </span>
+                                <input type="text">
+                            </div>
+                        </div>
+
+                        <div class="copy_qr_code_field">
+                            <h5>QR Code</h5>
+                            <button class="copy_qr">
+                                <span class="material-symbols-outlined"> qr_code_scanner </span>
+                                <p>Copy</p>
+                            </button>
+                        </div>
+
+                        <h4>Personal Information</h4>
+
+                            <div class="email_input">
+                                <h5>E-mail</h5>
+                                <input type="email">
+                            </div>
+
+                            <div class="align_container">
+
+                                <div class="change_pw_field">
+                                <h5>Change Password</h5>
+                                <div class="pw_input">
+                                    <span class="material-symbols-outlined"> visibility </span>
+                                    <input type="password">                                
+                                </div>
+                                </div>
+
+                                <button class="deletion_btn">Delete Account</button>
+
+                            </div>
+                            
+                            <div class="profile_deletion_tab" style="display: none;">
+                                <h4>Deletion</h4>
+
+                                <div class="deletion_inputs_field">
+                                    <label for="user_email">Type your E-mail</label>
+                                    <input name="user_email" type="email">
+
+                                    <label for="user_pw">Type your Password</label>
+                                    <input name="user_pw" type="password">
+
+                                    <label for="user_pw_retype">Retype your Password</label>
+                                    <input name="user_pw_retype" type="password">
+                                </div>
+
+                                <div class="btn_field_flex">
+                                    <button class="cancel_deletion">Cancel</button>
+                                    <button class="deletion_complete">Delete Account</button>
+                                </div>
+                            </div>
+                    </div>
+                    
+
+            </section>
+
+
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
